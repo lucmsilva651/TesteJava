@@ -1,5 +1,5 @@
-public class Teste {
-    public static void mostrarStrings() {
+public class Strings {
+    public static String strings() {
         int numero = 2;
         char caractere = 'a';
         String seila = "sei nao";
@@ -10,6 +10,6 @@ public class Teste {
 
         String eu = InfoUsuario.gerarString(16, "Lucas", 1.80, "Piquete");
 
-        System.out.printf("Sei nao\n\nCaractere: %s\nNumero: %d\nString: %s\nHash: %d\nSoma: %d\nGay: %s\n\nMinhas info:\n%s", caractere, numero, seila, seilaHash, soma, boolGay, eu);
+        return String.format("Sei nao\n\nCaractere: %s\nNumero: %d\nString: %s\nHash: %d\nSoma: %d\nGay: %s\n\nMinhas info:\n%s", caractere, numero, seila, seilaHash, soma, boolGay, eu);
     }
 }
